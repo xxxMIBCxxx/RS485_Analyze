@@ -1,0 +1,409 @@
+16:11:24 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+16:11:25 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7852 B        16 KB     47.92%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7852	      0	   3248	  11100	   2b5c	RS485_Analyze.axf
+ 
+16:11:39 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+16:11:39 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:11:40 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:14:51 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+16:14:51 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7852 B        16 KB     47.92%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7852	      0	   3248	  11100	   2b5c	RS485_Analyze.axf
+ 
+16:14:53 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:26:28 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+16:26:28 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7800 B        16 KB     47.61%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7800	      0	   3248	  11048	   2b28	RS485_Analyze.axf
+ 
+16:26:30 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:32:47 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+16:32:47 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7820 B        16 KB     47.73%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7820	      0	   3248	  11068	   2b3c	RS485_Analyze.axf
+ 
+16:32:49 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:34:10 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+16:34:10 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7800 B        16 KB     47.61%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7800	      0	   3248	  11048	   2b28	RS485_Analyze.axf
+ 
+16:34:12 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:46:48 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+16:46:48 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7800 B        16 KB     47.61%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7800	      0	   3248	  11048	   2b28	RS485_Analyze.axf
+ 
+16:46:50 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:47:16 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+16:47:16 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:47:17 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:49:10 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+16:49:11 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+16:49:12 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+17:34:05 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+17:34:06 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+17:34:07 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+17:37:03 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+17:37:03 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7800 B        16 KB     47.61%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7800	      0	   3248	  11048	   2b28	RS485_Analyze.axf
+ 
+17:37:07 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+17:39:32 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+17:39:32 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7800 B        16 KB     47.61%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7800	      0	   3248	  11048	   2b28	RS485_Analyze.axf
+ 
+17:39:34 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+17:46:50 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+17:46:51 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7800 B        16 KB     47.61%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7800	      0	   3248	  11048	   2b28	RS485_Analyze.axf
+ 
+17:46:54 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+18:01:47 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+18:01:47 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+Building file: ../src/RS485_Analyze.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0PLUS -D__MTB_BUFFER_SIZE=256 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__LPC8XX__ -D__REDLIB__ -I"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/RS485_Analyze.d" -MT"src/RS485_Analyze.o" -MT"src/RS485_Analyze.d" -o "src/RS485_Analyze.o" "../src/RS485_Analyze.c"
+In file included from C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/chip.h:185,
+                 from ../src/RS485_Analyze.c:1:
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h: In function 'Chip_GPIO_SetPortDIRMask':
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: warning: '~' on a boolean expression [-Wbool-operation]
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\inc/gpio_8xx.h:349:51: note: did you mean to use logical not?
+  Chip_GPIO_SetPortDIRInput(pGPIO, port, pinMask & ~outMask);
+                                                   ^
+                                                   !
+Finished building: ../src/RS485_Analyze.c
+ 
+Building target: RS485_Analyze.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\MIBC\Documents\MCUXpressoIDE_11.0.1_2563\workspace\lpc_chip_8xx\Debug" -Xlinker -Map="RS485_Analyze.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m0 -mthumb -T "RS485_Analyze_Debug.ld" -o "RS485_Analyze.axf"  ./src/RS485_Analyze.o ./src/cr_startup_lpc8xx.o ./src/crp.o ./src/mtb.o ./src/sysinit.o   -llpc_chip_8xx
+Memory region         Used Size  Region Size  %age Used
+        MFlash16:        7820 B        16 KB     47.73%
+         RamLoc4:        3248 B         4 KB     79.30%
+Finished building target: RS485_Analyze.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "RS485_Analyze.axf"; # arm-none-eabi-objcopy -v -O binary "RS485_Analyze.axf" "RS485_Analyze.bin" ; # checksum -p LPC812 -d "RS485_Analyze.bin";
+   text	   data	    bss	    dec	    hex	filename
+   7820	      0	   3248	  11068	   2b3c	RS485_Analyze.axf
+ 
+18:02:03 **** Incremental Build of configuration Debug for project lpc_chip_8xx ****
+make -r all 
+make: Nothing to be done for 'all'.
+18:02:03 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+18:02:04 **** Incremental Build of configuration Debug for project RS485_Analyze ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
